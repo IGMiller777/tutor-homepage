@@ -3,205 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Иван Гаманович — репетитор английского языка</title>
-<meta name="description" content="Иван Гаманович — репетитор английского языка. Индивидуальные и парные занятия онлайн: общий английский, разговорная практика, подготовка к IELTS и техническое собеседование на английском.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231f6f5c'/><text x='50' y='68' font-size='54' font-family='Georgia,serif' fill='white' text-anchor='middle'>IG</text></svg>">
+<title>Начнём завтра</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --text: #1c1e22;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --text: #e9ecef;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: 600;
+    letter-spacing: -.02em;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html">
-      <span class="mark">IG</span>
-      <span>Иван Гаманович</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html" class="active">Главная</a>
-      <a href="#about">Обо мне</a>
-      <a href="materials/index.html">Материалы</a>
-      <a href="articles/index.html">Статьи</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Репетитор английского языка</span>
-        <h1>Иван Гаманович</h1>
-        <p class="lead">
-          Помогаю говорить по-английски свободно и без страха ошибиться. Индивидуальные занятия
-          онлайн: общий английский от A1 до C1, разговорная практика, подготовка к IELTS
-          и к техническим собеседованиям в международных компаниях.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Записаться на пробный урок</a>
-          <a class="btn btn-ghost" href="materials/index.html">Смотреть материалы</a>
-        </div>
-      </div>
-      <div class="portrait">
-        <div>
-          <div class="initials">IG</div>
-          <div class="caption">Онлайн · Zoom / Google Meet<br>Варшава (UTC+1)</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Обо мне</h2>
-        <p>Инженер-разработчик, который преподаёт английский так, как сам хотел бы его учить: без зубрёжки правил ради правил и с упором на живую речь.</p>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Практика с первого урока</h3>
-          <p>80% времени на занятии говорит ученик. Грамматику разбираем на ваших же фразах — сразу видно, что именно исправлять.</p>
-        </div>
-        <div class="card">
-          <h3>Программа под задачу</h3>
-          <p>Переезд, работа в международной команде, экзамен или путешествия — план занятий строится вокруг вашей цели, а не вокруг учебника.</p>
-        </div>
-        <div class="card">
-          <h3>Английский для IT</h3>
-          <p>Code review, стендапы, созвоны с заказчиком, техническое интервью — отдельный трек для разработчиков и всех, кто работает в продуктовых командах.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="stats">
-        <div class="stat"><div class="num">7+</div><div class="label">лет преподавания</div></div>
-        <div class="stat"><div class="num">A1–C1</div><div class="label">уровни по CEFR</div></div>
-        <div class="stat"><div class="num">120+</div><div class="label">учеников</div></div>
-        <div class="stat"><div class="num">60 мин</div><div class="label">длительность урока</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="teaching">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Что я преподаю</h2>
-        <p>Четыре направления. Их можно комбинировать — например, общий английский плюс подготовка к интервью.</p>
-      </div>
-      <div class="grid grid-2">
-        <div class="card">
-          <span class="tag">General English</span>
-          <h3>Общий английский</h3>
-          <p>Системный курс от A1 до C1: грамматика, лексика, чтение и аудирование. Для тех, кто хочет уверенную базу.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Speaking</span>
-          <h3>Разговорная практика</h3>
-          <p>Занятия целиком на английском: обсуждения, ролевые ситуации, работа над произношением и беглостью.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Exams</span>
-          <h3>Подготовка к IELTS</h3>
-          <p>Стратегии для всех четырёх секций, разбор критериев оценивания, пробные тесты с обратной связью.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Business &amp; IT</span>
-          <h3>Английский для работы</h3>
-          <p>Письма и созвоны, презентации, техническое собеседование, small talk с командой из другой страны.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="library">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Библиотека</h2>
-        <p>Всё, что я собираю для учеников, лежит в двух разделах и открыто для всех.</p>
-      </div>
-      <div class="grid">
-        <a class="card" href="materials/index.html">
-          <span class="tag">Раздел</span>
-          <h3>Материалы</h3>
-          <p>Конспекты по грамматике, тематические подборки лексики, списки вопросов для разговорных занятий и чек-листы для самостоятельной работы.</p>
-          <span class="meta">Открыть материалы →</span>
-        </a>
-        <a class="card" href="articles/index.html">
-          <span class="tag">Раздел</span>
-          <h3>Статьи</h3>
-          <p>Заметки о том, как учить язык: что действительно работает с запоминанием слов, как готовиться к IELTS и какие ошибки повторяют почти все.</p>
-          <span class="meta">Читать статьи →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="format">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Как проходят занятия</h2>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Формат</h3>
-          <ul class="checklist">
-            <li>Онлайн, Zoom или Google Meet</li>
-            <li>60 минут, 1–3 раза в неделю</li>
-            <li>Индивидуально или в паре</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Что входит</h3>
-          <ul class="checklist">
-            <li>Материалы после каждого урока</li>
-            <li>Домашнее задание с проверкой</li>
-            <li>Личный список ошибок и слов</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>С чего начать</h3>
-          <ul class="checklist">
-            <li>Бесплатный пробный урок 30 минут</li>
-            <li>Определяем уровень и цель</li>
-            <li>Собираем план на первый месяц</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <div class="card">
-        <h2>Записаться на занятие</h2>
-        <p class="lead">Напишите пару слов о своём уровне и цели — отвечу в течение дня и предложу время для пробного урока.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:therealigmiller@gmail.com">therealigmiller@gmail.com</a>
-          <a class="btn btn-ghost" href="https://github.com/IGMiller777" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div>© 2026 Иван Гаманович · Репетитор английского языка</div>
-    <div>
-      <a href="materials/index.html">Материалы</a> ·
-      <a href="articles/index.html">Статьи</a> ·
-      <a href="mailto:therealigmiller@gmail.com">Почта</a>
-    </div>
-  </div>
-</footer>
-
+  <h1>Начнём завтра</h1>
 </body>
 </html>
