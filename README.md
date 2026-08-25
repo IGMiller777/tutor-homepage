@@ -31,8 +31,14 @@ python3 -m http.server 8000
 
 ## Публикация
 
-Сайт публикуется на GitHub Pages воркфлоу `.github/workflows/pages.yml`
-при каждом пуше в ветку публикации.
+Сайт раздаётся GitHub Pages напрямую из ветки:
+**Settings → Pages → Source: Deploy from a branch →
+ветка `claude/tutor-page-gh-pages-8njef1`, папка `/ (root)`**.
+
+Любой пуш в эту ветку автоматически обновляет сайт — сборка не нужна.
+Файл `.nojekyll` отключает обработку Jekyll, чтобы страницы отдавались как есть.
+
+Адрес сайта: https://igmiller777.github.io/tutor-homepage/
 
 ## Как добавить материал или статью
 
